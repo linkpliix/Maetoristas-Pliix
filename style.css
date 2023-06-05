@@ -1,0 +1,129 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: white;
+}
+
+h1, h2 {
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 30px;
+    color: #6a1b9a;
+    font-size: 2.5rem;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+
+.banner-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.driver-section {
+    background-color: #8624e4;
+    color: white;
+    border-radius: 10px;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.driver-section:hover {
+	transform: scale(1.05);
+}
+
+.driver-section:active {
+	transform: scale(1);
+}
+
+.driver-section:hover h2 {
+	font-size: 3rem;
+}
+
+
+.driver-photo {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 40px;
+    border: 5px solid white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+
+.driver-info {
+    font-size: 1.2rem;
+    color: white;
+}
+
+
+h2 {
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 30px;
+    color: white;
+    font-size: 2.5rem;
+}
+
+
+p {
+    font-size: 1 rem;
+    line-height: 1.5;
+    text-align: justify;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+
+/* Estilo para dispositivos com largura de tela igual ou menor que 600px */
+@media (max-width: 600px) {
+    h1, h2 {
+      font-size: 2rem;
+      margin: 20px;
+    }
+  
+    main {
+      padding: 20px;
+    }
+  
+    .driver-section {
+      padding: 20px;
+      flex-direction: column;
+      align-items: center;
+      margin: 10px;
+    }
+  
+    .driver-section:hover h2 {
+      font-size: 2.5rem;
+    }
+  
+    .driver-photo {
+      width: 150px;
+      height: 150px;
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+  
+    h2 {
+      margin: 20px 0;
+      font-size: 2rem;
+    }
+  }
+  
